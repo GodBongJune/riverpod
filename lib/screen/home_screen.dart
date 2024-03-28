@@ -3,6 +3,7 @@ import 'package:actual/screen/autu_dispose_modifier_screen.dart';
 import 'package:actual/screen/family_modifier_screen.dart';
 import 'package:actual/screen/future_provider_screen.dart';
 import 'package:actual/screen/listen_provider_screen.dart';
+import 'package:actual/screen/provider_screen.dart';
 import 'package:actual/screen/select_provider_screen.dart';
 import 'package:actual/screen/state_notifier_provider_screen.dart';
 import 'package:actual/screen/state_provider_screen.dart';
@@ -97,6 +98,16 @@ class HomeScreen extends StatelessWidget {
               );
             },
             child: Text("SelectProviderScreen"),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => ProviderScreen(),
+                ),
+              );
+            },
+            child: Text("ProviderScreen"),
           )
         ],
       ),
