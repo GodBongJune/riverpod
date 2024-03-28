@@ -1,4 +1,5 @@
 import 'package:actual/layout/default_layout.dart';
+import 'package:actual/screen/family_modifier_screen.dart';
 import 'package:actual/screen/future_provider_screen.dart';
 import 'package:actual/screen/state_notifier_provider_screen.dart';
 import 'package:actual/screen/state_provider_screen.dart';
@@ -53,6 +54,16 @@ class HomeScreen extends StatelessWidget {
               );
             },
             child: Text("StreamProviderScreen"),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => FamilyModifierScreen(),
+                ),
+              );
+            },
+            child: Text("FamilyModifierScreen"),
           )
         ],
       ),
